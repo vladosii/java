@@ -14,16 +14,17 @@ public class hw_3_2 {
         }
         System.out.println();
 
-        // System.out.println(list1);
+        List<Integer> newList1 = removeNumbers(list1);
+        System.out.println(newList1);
+    }
 
+    public static List<Integer> removeNumbers(List<Integer> list1){
         for (int i = 0; i < list1.size(); i++) {
             if (list1.get(i)%2 != 1){
                 // System.out.print(list1.get(i)+" ");
                 list1.remove(i);
             }
         }
-        
-        System.out.println(list1);
-
+        return list1;
     }
 }
